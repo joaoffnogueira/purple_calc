@@ -1,0 +1,4 @@
+class MemoryModel {
+  MemoryModel();
+}
+  
