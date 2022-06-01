@@ -12,7 +12,12 @@ class ButtonRowComponent extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: buttons,
+        children: buttons.fold(<Widget>[], (list, button) {
+          list.isEmpty
+              ? list.add(button)
+              : list.addAll([SizedBox(width: 1), button]);
+          return list;
+        }),
       ),
     );
   }

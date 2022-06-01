@@ -32,6 +32,7 @@ class KeyboardComponent extends StatelessWidget {
               ),
             ],
           ),
+          SizedBox(height: 1),
           ButtonRowComponent(buttons: [
             ButtonComponent(
               text: '7',
@@ -51,6 +52,7 @@ class KeyboardComponent extends StatelessWidget {
               onPressed: onPressed,
             ),
           ]),
+          SizedBox(height: 1),
           ButtonRowComponent(buttons: [
             ButtonComponent(
               text: '4',
@@ -70,6 +72,7 @@ class KeyboardComponent extends StatelessWidget {
               onPressed: onPressed,
             ),
           ]),
+          SizedBox(height: 1),
           ButtonRowComponent(buttons: [
             ButtonComponent(
               text: '1',
@@ -89,6 +92,7 @@ class KeyboardComponent extends StatelessWidget {
               onPressed: onPressed,
             ),
           ]),
+          SizedBox(height: 1),
           ButtonRowComponent(buttons: [
             ButtonComponent(
               text: '0',
