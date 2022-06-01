@@ -3,6 +3,10 @@ import 'package:purple_calc/components/display_component.dart';
 import 'package:purple_calc/components/keyboard_component.dart';
 
 class CalcScreen extends StatelessWidget {
+  _onPressed(String text) {
+    print(text);
+  }
+
   const CalcScreen({Key? key}) : super(key: key);
 
   @override
@@ -11,7 +15,7 @@ class CalcScreen extends StatelessWidget {
       home: Column(
         children: [
           DisplayComponent(text: 'Display'),
-          KeyboardComponent(),
+          KeyboardComponent(onPressed: _onPressed),
         ],
       ),
     );
